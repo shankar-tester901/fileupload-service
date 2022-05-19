@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "targets": [
+      "file_upload_service_function",
+      "file_operations"
+    ],
+    "ignore": [],
+    "source": "functions"
+  },
+  "client": {
+    "source": "client"
+  }
+}

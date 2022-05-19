@@ -1,0 +1,10 @@
+{
+	"deployment": {
+		"name": "file_upload_service_function",
+		"stack": "node14",
+		"type": "advancedio"
+	},
+	"execution": {
+		"main": "file_upload_service.js"
+	}
+}

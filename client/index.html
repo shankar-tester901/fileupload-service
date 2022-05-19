@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Catalyst Filestore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="main.js"></script>
+    <style>
+        #submitButton {
+            background-color: rgb(172, 178, 180);
+            border: none;
+            color: rgb(39, 39, 39);
+            padding: 4px 4px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            width: 80px;
+        }
+
+        #main {
+            width: 100%;
+            height: 100%;
+            float: right;
+            text-align: justify;
+        }
+
+        #right_part {
+            width: 30%;
+        }
+
+        #left_part {
+            width: 20%;
+            display: inline-block;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body onload="displayFileDetails()">
+    <center>
+        <br>
+        <h3>Catalyst File Store Operations</h3>
+        <br>
+        <div id="main" style="padding-left: 500px;">
+            <div id="left_part" style="float: right;">
+                &nbsp;&nbsp;<button id="submitButton" onclick="uploadfile()">Upload</button><br />
+            </div>
+            <div class="custom-file mb-3" id="right_part" style="float: right;">
+                <input type="file" class="custom-file-input" id="customFile" name="filename">
+                <label class="custom-file-label" for="customFile" style="font-size: small;">Choose file</label><br><br>
+                <center><p id="status" style="padding-left: 100px;"></p></center>
+            </div>
+            
+        </div>
+        <br> <br><br> <br><br>
+
+        <p id="tableData"></p>
+    </center>
+</body>
+<script>
+    $(".custom-file-input").on('change', function () {
+        var fileName = $(this).val().split("\\").pop();
+        $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+    });
+</script>
+
+</html>

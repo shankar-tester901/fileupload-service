@@ -1,0 +1,11 @@
+{
+	"name": "file_upload_service_function",
+	"version": "1.0.0",
+	"main": "file_upload_service.js",
+	"author": "shankarr+1001@zohocorp.com",
+	"dependencies": {
+		"express": "^4.17.1",
+		"formidable": "^1.2.2",
+		"zcatalyst-sdk-node": "^2.0.1"
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"name": "file_operations",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "shankarr+1001@zohocorp.com",
+	"dependencies": {
+		"express": "^4.17.1",
+		"express-fileupload": "^1.2.1",
+		"fs": "^0.0.1-security",
+		"zcatalyst-sdk-node": "latest"
+	}
+}

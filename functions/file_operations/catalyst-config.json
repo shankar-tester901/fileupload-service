@@ -1,0 +1,10 @@
+{
+	"deployment": {
+		"name": "file_operations",
+		"stack": "node14",
+		"type": "advancedio"
+	},
+	"execution": {
+		"main": "index.js"
+	}
+}
